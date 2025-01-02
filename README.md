@@ -1,70 +1,120 @@
-# Getting Started with Create React App
+![light mode tasktrek](https://github.com/user-attachments/assets/0aa5751d-727f-4713-a6d8-3379d3ee214c)
+![dark mode tasktrek](https://github.com/user-attachments/assets/3570de88-a235-4f62-a11d-9f6f938331a6)
+# Task Management Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A lightweight and modular task management application built using React. The app supports drag-and-drop task organization and leverages JSON Server for data persistence.
 
-## Available Scripts
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Modular React components.
+- Drag-and-drop functionality for task organization.
+- Light and dark mode toggle.
+- JSON Server for backend simulation.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   ```
 
-### `npm test`
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Install JSON Server globally:
+   ```bash
+   npm install -g json-server
+   ```
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### JSON Server
+1. Start the JSON Server:
+   ```bash
+   json-server --watch public/db.json --port 5000
+   ```
+2. Start the React app:
+   ```bash
+   npm start
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Components
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Header.js
+- **Purpose:** Provides the header section with a title,Add task and dark mode toggle.
+- **Key Features:**
+  - Displays the application title.
+  - Adding new task
+  - Dark mode toggle button.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Modal.js
+- **Purpose:** A reusable modal component used for editing tasks.
+- **Key Features:**
+  - Accepts props for task details.
+  - Calls functions for updating or closing the modal.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### TaskCard.js
+- **Purpose:** Represents an individual task card.
+- **Key Features:**
+  - Displays task title and description.
+  - Supports drag-and-drop using React DnD.
+  - Includes Edit and Delete buttons.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### TaskColumn.js
+- **Purpose:** A column for tasks categorized by status (e.g., "To Do", "In Progress", "Completed").
+- **Key Features:**
+  - Displays tasks filtered by status.
+  - Drop zone for dragging tasks into the column.
+  - Uses React DnD for drop handling.
 
-## Learn More
+### TaskBoard.js
+- **Purpose:** The main container for the task management board.
+- **Key Features:**
+  - Contains multiple `TaskColumn` components.
+  - Provides the ability to add new tasks using a `TaskForm`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### API.js
+- **Purpose:** Centralized file for managing API calls to the JSON Server.
+- **Key Features:**
+  - Fetch tasks.
+  - Add, update, and delete tasks.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### TaskContext.js
+- **Purpose:** Provides global state management for tasks and dark mode.
+- **Key Features:**
+  - Manages tasks array.
+  - Provides context for dark mode.
+  - Centralized state management for the application.
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Database
 
-### Analyzing the Bundle Size
+### db.json
+- **Purpose:** Simulates a backend for storing task data.
+- **Structure:**
+  ```json
+  {
+    "tasks": [
+      {
+        "id": 1,
+        "title": "Task 1",
+        "description": "some description",
+        "status": "To Do"
+      }
+    ]
+  }
+  ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
