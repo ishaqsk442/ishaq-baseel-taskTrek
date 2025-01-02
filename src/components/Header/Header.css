@@ -18,3 +18,35 @@
     border-radius: 10px; 
     
 }
+
+
+.add-task{
+  
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  }
+  
+  .dark-mode{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+  }
+  .white-mode{
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+
+  }

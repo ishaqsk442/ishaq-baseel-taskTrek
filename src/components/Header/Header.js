@@ -23,25 +23,15 @@ const Header = () => {
 
   return (
     <header className="header">
-      <h1>Task Management</h1>
+      <h1>Task-Trek</h1>
       <button
         onClick={toggleModal}
-        style={{
-          display: "block",
-          margin: "0 auto",
-          padding: "10px 20px",
-          fontSize: "16px",
-          backgroundColor: "#4CAF50",
-          color: "#fff",
-          border: "none",
-          borderRadius: "5px",
-          cursor: "pointer",
-        }}
+       className="add-task"
       >
         Add Task
       </button>
       {showModal && <TaskForm saveTask={saveTask} toggleModal={toggleModal} />}
-      <button className="modes" onClick={darkModes}>
+      <button className={darkMode ? "white-mode" : "dark-mode"} onClick={darkModes}>
         {darkMode ? "Light Mode" : "Dark Mode"}
       </button>
     </header>

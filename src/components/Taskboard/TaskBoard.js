@@ -7,7 +7,7 @@ const TaskBoard = () => {
   return (
     <div className="task-board">
         <TaskColumn className="component" title="To Do" status="todo"  />
-        <TaskColumn title="In Progress" status="inProgress"  />
+        <TaskColumn title="In Progress" status="inprogress"  />
         <TaskColumn title="Completed" status="completed"  />
     </div>
   );
