@@ -34,36 +34,5 @@ const TaskForm = ({ saveTask, toggleModal }) => {
   );
 };
 
-// const modalStyles = {
-//   position: "fixed",
-//   top: "50%",
-//   left: "50%",
-//   transform: "translate(-50%, -50%)",
-//   backgroundColor: "white",
-//   padding: "20px",
-//   borderRadius: "10px",
-//   boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
-//   zIndex: "1000",
-//   width: "300px",
-//   border:"1px solid grey"
-// };
-
-// const inputStyles = {
-//   width: "100%",
-//   padding: "8px",
-//   marginBottom: "10px",
-//   borderRadius: "5px",
-//   border: "1px solid #ddd",
-// };
-
-// const buttonStyles = {
-//   backgroundColor: "#4CAF50",
-//   color: "#fff",
-//   border: "none",
-//   padding: "8px 15px",
-//   borderRadius: "5px",
-//   cursor: "pointer",
-//   marginRight: "10px",
-
 
 export default TaskForm;

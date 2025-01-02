@@ -19,6 +19,13 @@
       "title": "Task 3",
       "description": "Description 3",
       "status": "completed"
+    },
+    {
+      "id": "0210addd-4b68-42a7-a2c4-d949933a1b53",
+      "title": "hello",
+      "description": "hi",
+      "status": "todo",
+      "bgColor": "hsl(198.80221086588713, 70%, 98%)"
     }
   ]
 }

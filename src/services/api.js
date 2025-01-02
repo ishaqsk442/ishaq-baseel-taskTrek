@@ -12,13 +12,7 @@ export const getTasks = async () => {
     });
   };
   
-  // export const updateTask = async (id, updatedTask) => {
-  //   await fetch(`http://localhost:5000/tasks/${id}`, {
-  //     method: "PUT",
-  //     headers: { "Content-Type": "application/json" },
-  //     body: JSON.stringify(updatedTask),
-  //   });
-  // };
+ 
 
   export const updateTask = async (id, updatedTask) => {
     const response = await fetch(`http://localhost:5000/tasks/${id}`, {
@@ -31,7 +25,7 @@ export const getTasks = async () => {
       throw new Error("Failed to update task");
     }
   
-    return await response.json(); // Return the updated task from the API
+    return await response.json(); 
   };
   
   
