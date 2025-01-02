@@ -3,8 +3,8 @@
     {
       "0": "1",
       "id": "1",
-      "title": "Task 10",
-      "description": "Description 1",
+      "title": "learn HTML",
+      "description": "1.Learn HTML in 07 days\n2.Build some static pages",
       "status": "todo"
     },
     {
@@ -19,13 +19,6 @@
       "title": "Task 3",
       "description": "Description 3",
       "status": "completed"
-    },
-    {
-      "id": "0210addd-4b68-42a7-a2c4-d949933a1b53",
-      "title": "hello",
-      "description": "hi",
-      "status": "todo",
-      "bgColor": "hsl(198.80221086588713, 70%, 98%)"
     }
   ]
 }
