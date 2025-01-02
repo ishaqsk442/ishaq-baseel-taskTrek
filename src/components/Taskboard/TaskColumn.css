@@ -1,0 +1,10 @@
+.column{
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid grey;
+    flex: auto;
+}
+
+.column h2{
+    text-decoration: underline;
+}

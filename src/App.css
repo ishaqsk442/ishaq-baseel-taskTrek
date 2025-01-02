@@ -1,0 +1,16 @@
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+}

@@ -1,0 +1,14 @@
+  .task-board {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    /* flex-wrap: wrap; */
+  }
+  
+  
+  @media (max-width: 768px) {
+    .task-board {
+      flex-direction: column;
+    }
+  }
+  
