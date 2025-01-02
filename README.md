@@ -1,6 +1,9 @@
-![light mode tasktrek](https://github.com/user-attachments/assets/0aa5751d-727f-4713-a6d8-3379d3ee214c)
-![dark mode tasktrek](https://github.com/user-attachments/assets/3570de88-a235-4f62-a11d-9f6f938331a6)
+![tasktrek light mode](https://github.com/user-attachments/assets/7abb33b2-4c4f-4ca2-b5e0-f9e7d333c2c3)
+![tasktrek dark mode](https://github.com/user-attachments/assets/49346ff7-7b74-4ad0-9041-a978f8ecbe22)
+
 # Task Management Application
+- Netlify deployed link : https://ishaq-baseel-tasktrek.netlify.app/
+
 
 A lightweight and modular task management application built using React. The app supports drag-and-drop task organization and leverages JSON Server for data persistence.
 
